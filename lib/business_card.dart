@@ -6,7 +6,7 @@ class BusinessCardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF6EFE7), // soft beige background
+      backgroundColor: const Color(0xFFF6EFE7), 
       body: Center(
         child: Container(
           width: 350,
@@ -16,7 +16,7 @@ class BusinessCardPage extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             boxShadow: [
               BoxShadow(
-                // ignore: deprecated_member_use
+                
                 color: Colors.black.withOpacity(0.1),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
@@ -28,14 +28,14 @@ class BusinessCardPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              // --- Top Row: Image + Info ---
+       
               Row(
                 children: [
                   // Profile Picture
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Image.asset(
-                      "assets/agie.png", // put your image here
+                      "assets/agie.png", 
                       width: 120,
                       height: 120,
                       fit: BoxFit.cover,
@@ -116,7 +116,7 @@ class BusinessCardPage extends StatelessWidget {
     );
   }
 
-  // Reusable contact row widget
+
   Widget _infoRow(IconData icon, String text) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
